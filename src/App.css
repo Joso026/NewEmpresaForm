@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+input {
+  border: 1px solid;
+  display: block;
+}
+
+.tabelaTaxas {
+  border-spacing: 10px; /* Espaçamento entre as células */
+  background-color: #ffffff; /* Cor de fundo da tabela */
+}
+
+.tabelaTaxas td, .tabelaTaxas th {
+  border: 1px solid;
+  padding: 5; /* Espaçamento interno das células */
+  background-color: #ffffff; /* Cor de fundo das células */
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* styles.css */
+.no-arrows {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+.no-arrows::-webkit-inner-spin-button,
+.no-arrows::-webkit-outer-spin-button {
+  -webkit-appearance: none; /* WebKit browsers como Safari e Chrome */
+  margin: 0;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
